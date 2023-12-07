@@ -1,23 +1,19 @@
 package com.ing.zoo;
 
-public class Lion {
-    public String name;
+public class Lion extends Animal {
+
     public String helloText;
     public String eatText;
 
-    public Lion()
-    {
+    public Lion(String name) {
+        super(name);
     }
 
-    public void sayHello()
-    {
-        helloText = "roooaoaaaaar";
-        System.out.println(helloText);
+    public String sayHello() {
+        return helloText = "roooaoaaaaar";
     }
 
-    public void eatMeat()
-    {
-        eatText = "nomnomnom thx mate";
-        System.out.println(eatText);
+    public String eatMeat() {
+        return eatText = "nomnomnom thx mate";
     }
 }
