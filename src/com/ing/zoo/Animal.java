@@ -1,8 +1,8 @@
 package com.ing.zoo;
 
+//Parent class
 public class Animal {
     private String name;
-    private String helloText;
 
     public Animal(String name) {
         this.name = name;
