@@ -8,7 +8,7 @@ public class Giraffe extends Animal{
     public String eatText;
     public String trick;
 
-    private String[] tricks = {"Sprints away","Balances on a giant ball"};
+    private final String[] tricks = {"Sprints away","Balances on a giant ball"};
 
     public Giraffe(String name) {
         super(name);

@@ -8,7 +8,7 @@ public class Tiger extends Animal {
     public String eatText;
     public String trick;
 
-    private String[] tricks = {"jumps in tree","scratches ears"};
+    private final String[] tricks = {"jumps in tree","scratches ears"};
 
     public Tiger(String name) {
         super(name);

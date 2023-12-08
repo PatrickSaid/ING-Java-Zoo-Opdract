@@ -8,7 +8,7 @@ public class Pig extends Animal {
     public String eatText;
     public String trick;
 
-    private String[] tricks = {"rolls in the mud","runs in circles"};
+    private final String[] tricks = {"rolls in the mud","runs in circles"};
 
     public Pig(String name) {
         super(name);

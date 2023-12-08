@@ -7,7 +7,7 @@ public class Snake extends Animal {
     public String eatText;
     public String trick;
 
-    private String[] tricks = {"Slings on a tree branch","Eats a whole goat"};
+    private final String[] tricks = {"Slings on a tree branch","Eats a whole goat"};
 
     public Snake(String name) {
         super(name);
