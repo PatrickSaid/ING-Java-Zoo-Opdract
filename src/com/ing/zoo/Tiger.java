@@ -8,6 +8,8 @@ public class Tiger extends Animal {
     public String eatText;
     public String trick;
 
+    private String[] tricks = {"jumps in tree","scratches ears"};
+
     public Tiger(String name) {
         super(name);
     }
@@ -22,12 +24,7 @@ public class Tiger extends Animal {
 
     public String performTrick() {
         Random random = new Random();
-        int rnd = random.nextInt(2);
-        if(rnd == 0) {
-            trick = "jumps in tree";
-        } else {
-            trick = "scratches ears";
-        }
-        return trick;
+        int rnd = random.nextInt(tricks.length);
+        return trick = tricks[rnd];
     }
 }

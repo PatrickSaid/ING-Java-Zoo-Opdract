@@ -8,6 +8,8 @@ public class Pig extends Animal {
     public String eatText;
     public String trick;
 
+    private String[] tricks = {"rolls in the mud","runs in circles"};
+
     public Pig(String name) {
         super(name);
     }
@@ -26,12 +28,7 @@ public class Pig extends Animal {
 
     public String performTrick() {
         Random random = new Random();
-        int rnd = random.nextInt(2);
-        if(rnd == 0) {
-            trick = "rolls in the mud";
-        } else {
-            trick = "runs in circles";
-        }
-        return trick;
+        int rnd = random.nextInt(tricks.length);
+        return trick = tricks[rnd];
     }
 }

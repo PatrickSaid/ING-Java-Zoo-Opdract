@@ -7,6 +7,8 @@ public class Snake extends Animal {
     public String eatText;
     public String trick;
 
+    private String[] tricks = {"Slings on a tree branch","Eats a whole goat"};
+
     public Snake(String name) {
         super(name);
     }
@@ -21,12 +23,7 @@ public class Snake extends Animal {
 
     public String performTrick() {
         Random random = new Random();
-        int rnd = random.nextInt(2);
-        if(rnd == 0) {
-            trick = "Slings on a tree branch";
-        } else {
-            trick = "Eats a whole goat";
-        }
-        return trick;
+        int rnd = random.nextInt(tricks.length);
+        return trick = tricks[rnd];
     }
 }

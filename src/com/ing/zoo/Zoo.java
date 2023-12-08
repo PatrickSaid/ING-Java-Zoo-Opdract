@@ -64,21 +64,21 @@ public class Zoo {
                 //if command equals "give leaves" printline the eatText for all Herbivores
                 else if (input.equals(commands[1])) {
                     //checks if animal.eatLeaves doesn't return an empty string
-                    if (animal.eatLeaves() != "") {
+                    if (!animal.eatLeaves().isEmpty()) {
                         System.out.println(animal.getName() + " says: " + animal.eatLeaves());
                     }
                 }
                 //if command equals "give meat" printline the eatText for all carnivores
                 else if (input.equals(commands[2])) {
                     //checks if animal.eatMeat doesn't return an empty string
-                    if (animal.eatMeat() != "") {
+                    if (!animal.eatMeat().isEmpty()) {
                         System.out.println(animal.getName() + " says: " + animal.eatMeat());
                     }
                 }
                 //if command equals "perform trick" printline the trick for the animals that can do tricks
                 else if (input.equals(commands[3])) {
                     //checks if animal.performTrick doesn't return an empty string
-                    if (animal.performTrick() != "") {
+                    if (!animal.performTrick().isEmpty()) {
                         System.out.println(animal.getName() + " does a trick: " + animal.performTrick());
                     }
                 }
